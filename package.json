@@ -1,0 +1,24 @@
+{
+  "name": "dev_task",
+  "version": "1.0.0",
+  "description": "project information",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "group_name",
+  "license": "UNLICENSE",
+  "private": true,
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-csslint": "^0.3.1",
+    "gulp-hint-web-reporter": "^1.1.4",
+    "gulp-htmlhint": "^0.3.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-util": "^3.0.7"
+  },
+  "dependencies": {
+    "del": "^2.2.2"
+  }
+}
