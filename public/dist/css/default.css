@@ -1,0 +1,176 @@
+@charset "utf-8";
+/* NHN Technology Services UIT Development Center */
+/*테스트 파일*/
+/* Common */
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0}
+body,input,textarea,select,button,table{font-family:'나눔고딕',NanumGothic,'맑은고딕',MalgunGothic,'돋움',Dotum, Helvetica,sans-serif;font-size:12px}
+img,fieldset{border:0}
+ul,ol{list-style:none}
+em,address{font-style:normal}
+a{text-decoration:none}
+a:hover,a:active,a:focus{text-decoration:underline}
+.blind,
+.u_skip{overflow:hidden;position:absolute;top:0;left:0;width:1px;height:1px;font-size:0;line-height:0}
+
+/* Header */
+*{};
+.header{width:100%;min-width:1130px;background:url(https://campaign.naver.com/staticfiles/gooddirect_1703/PC/img/bg_header.jpg) repeat-x 0 100%}
+.header .gnb_sc:after,
+.header .lnb_sc:after{display:block;clear:both;content:''}
+.header .hd_inner{width:1130px;height:110px;margin:0 auto}
+.header .gnb_sc{height:36px;margin-bottom:2px;padding:0 6px 0 8px}
+.header .gnb_sc .site{overflow:hidden;float:left;height:100%}
+.header .gnb_sc .site a{float:left;padding:10px 7px 11px}
+.header .gnb_sc .site a span{display:inline-block;overflow:hidden;height:15px;background:url(https://campaign.naver.com/staticfiles/gooddirect_1703/PC/img/sp_m_header.png) no-repeat;line-height:1000px}
+.header .gnb_sc .site a.s_link1{background:none}
+.header .gnb_sc .site a.s_link1 span{width:47px;background-position:0 0}
+.header .gnb_sc .site a.s_link2 span{width:71px;background-position:0 -20px}
+.header .gnb_sc .chkout_gnb_wrap{float:right;height:100%}
+.header .gnb_sc .chkout_gnb_wrap .link{float:left;margin-right:16px}
+.header .gnb_sc .chkout_gnb_wrap .link a{font-size:11px;line-height:36px;color:#fff;text-decoration:none}
+.header .gnb_sc .chkout_gnb_wrap #gnb{float:left;margin:3px 0 5px}
+.header .gnb_sc .chkout_gnb_wrap .gnb_my_namebox a.gnb_emp{color:rgba(255,255,255,0.5) !important}
+.header .gnb_sc .chkout_gnb_wrap .cart_count{display:inline-block;position:relative;height:15px;margin:0 7px;background-color:#21b64f;line-height:15px}
+.header .gnb_sc .chkout_gnb_wrap .cart_count em{font-weight:bold;font-family:Tahoma,Geneva,sans-serif;line-height:normal;color:#fff}
+.header .gnb_sc .chkout_gnb_wrap .cart_count span{display:inline-block;position:absolute;top:0;width:7px;height:15px;background:url(https://campaign.naver.com/staticfiles/gooddirect_1703/PC/img/2014_img/sp_png_ico.png) no-repeat}
+.header .gnb_sc .chkout_gnb_wrap .cart_count .l_bg{left:-7px;background-position:-60px 0}
+.header .gnb_sc .chkout_gnb_wrap .cart_count .r_bg{right:-7px;background-position:-70px 0}
+.header .lnb_sc{height:72px;padding:0 10px 0 15px}
+.header .lnb_sc .sta{overflow:hidden;float:left;padding:21px 0 0}
+.header .lnb_sc .sta a{float:left}
+.header .lnb_sc .sta a span{display:inline-block;overflow:hidden;height:31px;background:url(https://campaign.naver.com/staticfiles/gooddirect_1703/PC/img/sp_m_header.png) no-repeat;line-height:10000px;vertical-align:top}
+.header .lnb_sc .sta a.logo_naver span{width:33px;background-position:0 -100px}
+.header .lnb_sc .sta a.logo_chkout{margin-left:6px}
+.header .lnb_sc .sta a.logo_chkout span{width:42px;background-position:-37px -100px}
+.header .lnb_sc .lnb{float:right;padding:26px 0 0}
+.header .lnb_sc .lnb ul{overflow:hidden}
+.header .lnb_sc .lnb li{float:left;margin-left:39px}
+.header .lnb_sc .lnb li a{float:left;padding:0 5px}
+.header .lnb_sc .lnb li a span{display:inline-block;overflow:hidden;height:18px;background:url(https://campaign.naver.com/staticfiles/gooddirect_1703/PC/img/sp_m_header.png) no-repeat;line-height:1000px}
+.header .lnb_sc .lnb li a.menu1 span{width:67px;background-position:0 -140px}
+.header .lnb_sc .lnb li a.menu2 span{width:70px;background-position:0 -160px}
+.header .lnb_sc .lnb li a.menu3 span{width:30px;background-position:0 -180px}
+.header .lnb_sc .lnb li a.menu4 span{width:67px;background-position:0 -200px}
+.header .lnb_sc .lnb li a.menu5 span{width:80px;background-position:0 -220px}
+.header .lnb_sc .lnb li a.menu6 span{width:82px;background-position:0 -240px}
+.header .lnb_sc .lnb li a.menu7 span{width:59px;background-position:0 -260px}
+.header .lnb_sc .lnb li.on a.menu1 span,
+.header .lnb_sc .lnb li a.menu1:hover span{width:67px;background-position:-100px -140px}
+.header .lnb_sc .lnb li.on a.menu2 span,
+.header .lnb_sc .lnb li a.menu2:hover span{width:70px;background-position:-100px -160px}
+.header .lnb_sc .lnb li.on a.menu3 span,
+.header .lnb_sc .lnb li a.menu3:hover span{width:30px;background-position:-100px -180px}
+.header .lnb_sc .lnb li.on a.menu4 span,
+.header .lnb_sc .lnb li a.menu4:hover span{width:67px;background-position:-100px -200px}
+.header .lnb_sc .lnb li.on a.menu5 span,
+.header .lnb_sc .lnb li a.menu5:hover span{width:80px;background-position:-100px -220px}
+.header .lnb_sc .lnb li.on a.menu6 span,
+.header .lnb_sc .lnb li a.menu6:hover span{width:82px;background-position:-100px -240px}
+.header .lnb_sc .lnb li.on a.menu7 span,
+.header .lnb_sc .lnb li a.menu7:hover span{width:59px;background-position:-100px -260px}
+.header .snb_sc{position:absolute;top:116px;left:50%;margin-left:-243px;padding:6px 0 0 24px;width:463px;height:50px;font-size:12px;background:url(https://campaign.naver.com/staticfiles/gooddirect_1703/PC/img/bg_snb.png) no-repeat 0 0;z-index:200}
+.header .snb_sc .idnm{float:left;position:relative;color:#94979c;font-size:12px;line-height:36px;height:36px;padding:0 0 0 36px;font-weight:normal}
+.header .snb_sc .idnm .thmb{position:absolute;top:5px;left:0;}
+.header .snb_sc .idnm .insd{display:inline-block;position:relative;top:-1px;*top:0;width:68px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:normal;line-height:36px;height:36px;vertical-align:middle}
+.header .snb_sc .ipy{overflow:hidden;line-height:36px;height:36px}
+.header .snb_sc .cverc{position:absolute;top:0;left:0;display:block;width:26px;height:26px;background:url(https://campaign.naver.com/staticfiles/gooddirect_1703/PC/img/mask_profile.png) no-repeat}
+.header .snb_sc .idnm a,.header .snb_sc .ipy dt a{color:#94979c}
+.header .snb_sc .idnm a:hover .insd{text-decoration:underline}
+.header .snb_sc .ipy dt{float:left;color:#94979c;padding:0 0 0 11px;margin-left:10px;background:url(https://campaign.naver.com/staticfiles/gooddirect_1703/PC/img/spr_snb.png) no-repeat 0 -68px}
+.header .snb_sc .ipy dt:first-child{background-position:0 -32px;margin-left:20px;padding-left:21px}
+.header .snb_sc .ipy dd{float:left;color:#fff;margin-left:11px;padding:0 0 0 21px;background:url(https://campaign.naver.com/staticfiles/gooddirect_1703/PC/img/spr_snb.png) no-repeat 0 11px}
+.header .snb_sc .ipy dd a{color:#fff}
+.header .snb_sc .ipy .npint{background-position:0 11px}
+.header .snb_sc .ipy .ncupn{background-position:0 -105px}
+.header .snb_sc .ipy .cnt{font-weight:bold}
+.header .snb_sc .b_login{text-align:center;margin:11px 0 0 -24px}
+.header .snb_sc .b_login a{color:#bfbfbf;text-decoration:underline}
+
+
+/* Footer */
+.footer{position:relative;clear:both;min-width:1130px;background-color:#f6f7f9;font-size:12px;text-align:center}
+.footer .section_copy{font-family:Verdana,Geneva,sans-serif;font-size:9px;line-height:14px;color:#999;text-align:center}
+.footer .section_copy .logo{display:inline-block;margin-top:2px;vertical-align:top}
+.footer .section_copy a{font-family:Tahoma,Geneva,sans-serif;font-size:9px;font-weight:bold;color:#999}
+.footer .section_copy em{padding-left:4px}
+.footer .inner_footer{padding:56px 0 29px}
+.footer .section_sns{width:676px;height:96px;margin:0 auto 29px;background:url(https://campaign.naver.com/staticfiles/gooddirect_1703/PC/img/sp_sns.png) no-repeat 0 0;overflow:hidden}
+.footer .item_sns{float:left;width:96px;height:96px;margin-left:20px;overflow:hidden}
+.footer .item_sns:first-child{margin-left:0}
+.footer .link_sns{display:block;height:96px;line-height:999em}
+.section_rolling{border-bottom:1px solid #e4e4e5}
+.inner_rolling{width:960px;padding:57px 0 60px;position:relative;margin:0 auto;text-align:left}
+.section_rolling .tit_other{display:block;font-size:24px;color:#555555;font-weight:500;margin-bottom:18px;line-height:25px}
+.section_rolling .rolling {width:960px;overflow:hidden;position:relative;}
+.section_rolling .rolling ul {margin:0; padding:0; float:left;height:200px}
+.section_rolling .rolling ul li {float:left;width:210px;height:200px;margin-right:10px}
+.section_rolling .btn_rolling{position:absolute;width:15px;height:28px;background:url(https://campaign.naver.com/staticfiles/gooddirect_1703/PC/img/sp_arrow.png) no-repeat 0 0}
+.section_rolling .btn_prev{left:-46px;top:187px}
+.section_rolling .btn_next{right:-45px;top:187px;background-position:0 -39px}
+
+/* content */
+.content{min-width:1200px;margin-top:6px}
+.spot{position:relative;height:588px;background:#ed8c01 url(https://campaign.naver.com/staticfiles/gooddirect_1703/PC/img/bg_spot.jpg) no-repeat 50% 0}
+.content .btn_event{position:absolute;top:448px;left:50%;margin-left:-480px;width:224px;height:56px}
+.content .evt{position:relative;height:503px;background:#f9f9f9 url(https://campaign.naver.com/staticfiles/gooddirect_1703/PC/img/bg_sec.jpg) no-repeat 50% 0}
+.content .evt2{position:relative;height:626px;background:#f9f9f9 url(https://campaign.naver.com/staticfiles/gooddirect_1703/PC/img/bg_sec2.jpg) no-repeat 50% 0}
+.content .evt2 .btn_direct{position:absolute;bottom:51px;left:50%;width:340px;height:76px;margin-left:-172px}
+
+
+
+/* faq */
+.faq_tit{overflow:hidden;width:238px;height:38px;margin:77px auto 38px;text-indent:-1000px;background:url(https://campaign.naver.com/staticfiles/gooddirect_1703/PC/img/ico_faq.png) no-repeat 0 -311px}
+.sp_pay_benefit{background:url(https://campaign.naver.com/staticfiles/gooddirect_1703/PC/img/ico_faq.png) no-repeat 0 0}
+.faq_fold_panel{width:1098px;margin:0 auto 100px;border:1px solid #e9e9e9}
+.faq_fold_panel .panel_heading{position:relative;height:60px;padding:0 83px 0 62px}
+.faq_fold_panel .panel_heading .q{font-size:16px;line-height:60px;padding-left:7px}
+.faq_fold_panel .panel_heading ~ .panel_heading{border-top:1px solid #f1f1f1}
+.faq_fold_panel .panel_heading .btn_toggle{position:absolute;top:0;right:0;bottom:0;left:0;background:url(https://campaign.naver.com/staticfiles/gooddirect_1703/PC/img/ico_faq.png) no-repeat 1046px 23px}
+.faq_fold_panel .panel_body{overflow:hidden;display:none;position:relative;min-height:78px;padding:26px 30px 31px 70px;border-top:1px solid #f1f1f1;background-color:#f6f7f9}
+.faq_fold_panel .txt_q,
+.faq_fold_panel .txt_a{overflow:hidden;position:absolute;left:39px;width:20px;height:20px;line-height:999px}
+.faq_fold_panel .txt_q{top:20px;background-position:-100px -106px}
+.faq_fold_panel .txt_a{top:26px;background-position:0 -141px}
+.faq_fold_panel .highlight{color:#00b737}
+.faq_fold_panel .answer_txt, .faq_fold_panel .tip_txt{line-height:22px}
+.faq_fold_panel .answer_txt .bar{margin:0 8px;color:#dddedf}
+.faq_fold_panel .answer_txt small{font-size:12px;color:#9e9e9e}
+.faq_fold_panel .tip_area{position:relative}
+.faq_fold_panel .icon{position:absolute;top:2px;left:1px;width:30px;height:18px;background-position: -220px 0}
+.faq_fold_panel .tip_txt{padding-left:39px;margin-top:15px}
+.faq_fold_panel .tit_block{display:block;margin-bottom:4px;font-size:14px;line-height:21px}
+.faq_fold_panel .comment_list{margin-top:18px}
+.faq_fold_panel .comment_list .comment_item{padding-left:8px;background-position:-400px 0;color:#9e9e9e;line-height:20px}
+.faq_fold_panel .comment_list .comment_item a{text-decoration:underline;color:#9e9e9e}
+.faq_fold_panel .comment_list .comment_item + .comment_item{margin-top:4px}
+.faq_fold_panel .comment_list_v2 .comment_item{background-position:-21px -187px;color:#000}
+.faq_fold_panel .add_comment{display:block;font-size:12px;color:#9e9e9e;line-height:18px}
+.faq_fold_panel .img_area{display:block;position:absolute;right:49px;bottom:0}
+.faq_fold_panel .img_area img{vertical-align:top}
+.link_area{margin-top:12px}
+.link_area .link{text-decoration:underline;color:#6e6e6e;line-height:18px}
+.link_area .link .ico_arrow{display:inline-block;*display:inline;width:10px;height:18px;background-position:5px -224px;vertical-align:top;*zoom:1}
+.faq5 + .panel_body{min-height:122px}
+.faq5 + .panel_body .img_area{right:44px;bottom:-12px}
+.faq_fold_panel .answer_txt + .answer_txt{margin-top:15px}
+.faq_fold_panel .answer_txt + .add_comment{margin-top:15px}
+.faq_fold_panel .answer_txt + .comment_list{margin-top:15px}
+.faq_fold_panel .comment_list + .answer_txt{margin-top:12px}
+.faq_fold_panel .on .btn_toggle{background-position:1046px -33px}
+.faq_fold_panel .on + .panel_body{display:block}
+
+.comment_list2 li,.comment_list2 dd{position:relative;padding-left:10px;line-height:20px}
+.comment_list2 li{padding-bottom:8px}
+.comment_list2 a{color:#000}
+.comment_list2 dt{padding:0;margin:20px 0 5px}
+.comment_list2 dt:first-child{margin-top:-18px}
+.comment_list2 dd li{padding:0}
+.comment_list2 li dl{margin-top:20px}
+.comment_list2 .point_tx{color:#00c73c;font-weight:bold}
+.comment_list2 .point_tx.v2{font-weight:normal}
+.comment_list2 .point_tx2 a{color:#00c73c;text-decoration:underline}
+.comment_list2 li dl dd{position:relative;padding-left:10px}
+.comment_list2 .bu_bar{position:absolute;top:0;left:0}
+.comment_list2 .sub_lst{margin:7px 0 -7px 0}
+.comment_list2 .sub_lst li,.comment_list2 .sub_lst dt,.comment_list2 .sub_lst dd{padding-bottom:8px}
+.review_num{position:absolute;top:161px;right:430px;font-size:12px;font-weight:bold;color:#9e9e9e}
