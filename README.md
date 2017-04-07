@@ -1,27 +1,48 @@
-## STEP 2. Default Task
-
-앞서 step 1에서 `gulp hello` 로 hello task 를 실행했는데, 항상 hello task를 실행한다면 hello task를 기본값으로 설정해줄 수 있습니다.
-
-```javascript
-var gulp = require('gulp');
-
-// hello world 라고 콘솔에 찍는 task
-gulp.task('hello', function () {
-	return console.log('Hello World!');
-});
-
-//gulp를 실행하면 default 로 hello task 실행
-gulp.task('default', ['hello']);
+## Default. 폴더구조
+```
+public
+- dist //산출물
+-- css
+-- img
+-- js
+- lib //외부lib
+- src //작업폴더
+-- img
+-- js
+-- scss
 ```
 
-step 1과는 다르게 'default' 라는 task가 추가되었고, 이 default task의 두번째 파라메터에 배열 형태로 'hello'가 추가되어 있는 것을 볼 수 있습니다.
-이제 `gulp hello` 라고 입력할 필요없이, 아래와 같이 `gulp` 라고만 하면 hello task 를 실행할 수 있습니다.
+## STEP 1. Install Task
 
+사용 모듈 설치하기
 
 ```bash
-$ gulp
+$ npm install
 ```
+설치 후 `node_modules`폴더 생성, 노드모듈 설치됨.
 
-hello 라는 task 를 실행하면 아래와 같이 'Hello world!' 라는 메시지만 출력하고 종료되는 것을 볼 수 있습니다.
 
-![hello task 실행 결과](./step2.png)
+## STEP 2. Task Name
+
+설치된 npm에 따른 명령어
+
+* del : `del` logs 폴더의 로그파일(logs/.html) 삭제
+```bash
+$ gulp del
+```
+* htmlhint : `gulp-htmlhint` html validator check
+```bash
+$ gulp html
+```
+* csslint : `gulp-csslint` css validator check
+```bash
+$ gulp css
+```
+* sass_task : `gulp-sass` 전처리기 scss 실행, css 파일변환
+```bash
+$ gulp sass_task
+```
+* browserSync : `browser-sync` 가상서버 실행(localhost), watch 포함
+```bash
+$ gulp server
+```
